@@ -25,7 +25,10 @@ public class formulario extends HttpServlet {
 		String nome = request.getParameter("nome");
 		String idade = request.getParameter("idade");
 		
-		//request.getRequestDispatcher("view").forward(request, response);
+		request.setAttribute("nome", nome);
+		request.setAttribute("idade", idade);
+		
+		request.getRequestDispatcher("view.jsp").forward(request, response);
 		
 		
 		PrintWriter sai = response.getWriter();

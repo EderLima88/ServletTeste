@@ -10,7 +10,9 @@
 
 <h1>View</h1>
 
-<%=request.getAttribute("n") %>
+<%=request.getAttribute("nome") %>
+
+<%=request.getAttribute("idade") %>
 
 </body>
 </html>
